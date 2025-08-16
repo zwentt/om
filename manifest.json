@@ -1,20 +1,27 @@
 {
   "version": 1,
+  "locale": "en_US",
+  "platform": { "R": "4.4.1" },
+
   "metadata": {
     "appmode": "shiny",
-    "entrypoint": "app.R"
+    "entrypoint": "app.R",
+    "primary_rmd": null,
+    "primary_html": null
   },
-  "locale": "en_US",
-  "platform": {
-    "R": "4.4.1"
-  },
+
   "repos": [
     { "name": "CRAN", "url": "https://cran.r-project.org" }
   ],
-  "packages": [
-    { "name": "shiny",   "source": "Repository" },
-    { "name": "bslib",   "source": "Repository" },
-    { "name": "shinyjs", "source": "Repository" },
-    { "name": "DT",      "source": "Repository" }
-  ]
+
+  "packages": {
+    "shiny":   { "Package": "shiny",   "Version": "1.9.1", "Source": "Repository", "Repository": "CRAN" },
+    "bslib":   { "Package": "bslib",   "Version": "0.7.0", "Source": "Repository", "Repository": "CRAN" },
+    "shinyjs": { "Package": "shinyjs", "Version": "2.1.0", "Source": "Repository", "Repository": "CRAN" },
+    "DT":      { "Package": "DT",      "Version": "0.33",  "Source": "Repository", "Repository": "CRAN" }
+  },
+
+  "files": {
+    "app.R": { "checksum": "" }
+  }
 }
