@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "project": {
+    "name": "my-posit-project",
+    "description": "Example Posit Cloud project",
+    "entrypoint": "my_script.R"
+  },
+  "packages": {
+    "cran": [
+      "dplyr",
+      "ggplot2"
+    ]
+  },
+  "commands": {
+    "postSetup": [
+      "Rscript -e \"install.packages(c('dplyr','ggplot2'))\""
+    ]
+  }
+}
