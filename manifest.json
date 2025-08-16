@@ -1,19 +1,22 @@
 {
   "version": 1,
-  "project": {
-    "name": "my-posit-project",
-    "description": "Example Posit Cloud project",
-    "entrypoint": "my_script.R"
+  "metadata": {
+    "appmode": "shiny",
+    "entrypoint": "my_script.R",
+    "primary_rmd": null,
+    "primary_html": null
   },
-  "packages": {
-    "cran": [
-      "dplyr",
-      "ggplot2"
-    ]
+  "platform": {
+    "R": "4.3.0"
   },
-  "commands": {
-    "postSetup": [
-      "Rscript -e \"install.packages(c('dplyr','ggplot2'))\""
-    ]
+  "locale": "en_US",
+  "packages": [
+    { "name": "shiny",   "source": "Repository" },
+    { "name": "bslib",   "source": "Repository" },
+    { "name": "shinyjs", "source": "Repository" },
+    { "name": "DT",      "source": "Repository" }
+  ],
+  "environment": {
+    "environment_management": { "r": true }
   }
 }
